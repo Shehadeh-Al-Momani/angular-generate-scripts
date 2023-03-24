@@ -23,7 +23,9 @@ import { HttpClientModule } from '@angular/common/http';
         lineNumbersLoader: () => import('highlightjs-line-numbers.js'),
         themePath: 'node_modules/highlight.js/styles/androidstudio.css',
         languages: {
-          typescript: () => import('highlight.js/lib/languages/C#'),
+          typescript: () => import('highlight.js/lib/languages/ts'),
+          cs: () => import('highlight.js/lib/languages/cs'),
+          tsql: () => import('highlight.js/lib/languages/tsql'),
           css: () => import('highlight.js/lib/languages/css'),
           xml: () => import('highlight.js/lib/languages/xml'),
         },
