@@ -18,7 +18,7 @@ BEGIN
 END; `;
 
   constructor(private hljsLoader: HighlightLoader) {
-    // this.hljsLoader.setTheme(themeAndroidStudio);
+    this.hljsLoader.setTheme(themeAndroidStudio);
   }
 
   ngOnInit(): void {
