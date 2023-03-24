@@ -24,8 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
         themePath: 'node_modules/highlight.js/styles/androidstudio.css',
         languages: {
           typescript: () => import('highlight.js/lib/languages/ts'),
-          cs: () => import('highlight.js/lib/languages/cs'),
-          tsql: () => import('highlight.js/lib/languages/tsql'),
+          // cs: () => import('highlight.js/lib/languages/cs'),
+          // tsql: () => import('highlight.js/lib/languages/tsql'),
           // css: () => import('highlight.js/lib/languages/css'),
           // xml: () => import('highlight.js/lib/languages/xml'),
         },
