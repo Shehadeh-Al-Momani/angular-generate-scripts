@@ -19,14 +19,14 @@ import { HttpClientModule } from '@angular/common/http';
       provide: HIGHLIGHT_OPTIONS,
       useValue: <HighlightOptions>{
         lineNumbers: true,
-        // coreLibraryLoader: () => import('highlight.js/lib/core'),
+        coreLibraryLoader: () => import('highlight.js/lib/core'),
         lineNumbersLoader: () => import('highlightjs-line-numbers.js'),
         themePath: 'node_modules/highlight.js/styles/androidstudio.css',
-        // languages: {
-        //   typescript: () => import('highlight.js/lib/languages/typescript'),
-        //   css: () => import('highlight.js/lib/languages/css'),
-        //   xml: () => import('highlight.js/lib/languages/xml'),
-        // },
+        languages: {
+          typescript: () => import('highlight.js/lib/languages/typescript'),
+          css: () => import('highlight.js/lib/languages/css'),
+          xml: () => import('highlight.js/lib/languages/xml'),
+        },
         // themePath: 'assets/styles/solarized-dark.css',
       },
     },
