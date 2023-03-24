@@ -19,7 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
       provide: HIGHLIGHT_OPTIONS,
       useValue: <HighlightOptions>{
         lineNumbers: true,
-        coreLibraryLoader: () => import('highlight.js/lib/core'),
+        // coreLibraryLoader: () => import('highlight.js/lib/core'),
         lineNumbersLoader: () => import('highlightjs-line-numbers.js'),
         themePath: 'node_modules/highlight.js/styles/github.css',
         languages: {
